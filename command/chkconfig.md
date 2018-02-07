@@ -71,7 +71,7 @@ chkconfig –level redis 2345 on # 把redis在运行级别为2、3、4、5的情
 
 如何增加一个服务：
 
-1.  服务脚本必须存放在`/etc/ini.d/`目录下；
+1.  服务脚本必须存放在`/etc/init.d/`目录下；
 2.  `chkconfig --add servicename`在chkconfig工具服务列表中增加此服务，此时服务会被在`/etc/rc.d/rcN.d`中赋予K/S入口了；
 3.  `chkconfig --level 35 mysqld on`修改服务的默认启动等级。
 
